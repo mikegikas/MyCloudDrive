@@ -128,7 +128,6 @@ public class HomePage {
         createNote(title, description);
     }
 
-
     @FindBy(id = "add-credential")
     private WebElement addCredentialButton;
 
