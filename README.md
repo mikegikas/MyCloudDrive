@@ -1,5 +1,7 @@
 # MyCloudDrive
 
+[![Codacy Badge](https://api.codacy.com/project/badge/Grade/1faf23e5032243a79c9d9b643943c8f5)](https://app.codacy.com/gh/mikegikas/MyCloudDrive?utm_source=github.com&utm_medium=referral&utm_content=mikegikas/MyCloudDrive&utm_campaign=Badge_Grade_Settings)
+
 You have been hired by My_Cloud_Drive, which is a brand new company aiming to make a dent in the Cloud Storage market and is already facing stiff competition from rivals like Google Drive and Dropbox. That hasn't dampened their spirits at all, however. They want to include personal information management features in their application to differentiate them from the competition, and the minimum viable product includes three user-facing features:
 
 1.  **Simple File Storage:** Upload/download/remove files
