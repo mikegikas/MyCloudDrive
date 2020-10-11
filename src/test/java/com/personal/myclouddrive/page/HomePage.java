@@ -7,10 +7,6 @@ import org.openqa.selenium.support.PageFactory;
 
 public class HomePage {
 
-    public HomePage(WebDriver webDriver) {
-        PageFactory.initElements(webDriver, this);
-    }
-
     @FindBy(id = "logoutButton")
     private WebElement logOutButton;
 
@@ -19,27 +15,6 @@ public class HomePage {
 
     @FindBy(id = "nav-credentials-tab")
     private WebElement credentialsTab;
-
-    public void logOut() {
-        logOutButton.click();
-    }
-
-    public WebElement getNoteTab() {
-        return noteTab;
-    }
-
-    public WebElement getCredentialsTab() {
-        return credentialsTab;
-    }
-
-    public void openNoteTab() {
-        noteTab.click();
-    }
-
-    public void openCredentialsTab() {
-        credentialsTab.click();
-    }
-
 
     @FindBy(id = "add-note")
     private WebElement addNoteButton;
@@ -64,6 +39,30 @@ public class HomePage {
 
     @FindBy(id = "note-description-text")
     private WebElement noteDescriptionText;
+
+    public HomePage(WebDriver webDriver) {
+        PageFactory.initElements(webDriver, this);
+    }
+
+    public void logOut() {
+        logOutButton.click();
+    }
+
+    public WebElement getNoteTab() {
+        return noteTab;
+    }
+
+    public WebElement getCredentialsTab() {
+        return credentialsTab;
+    }
+
+    public void openNoteTab() {
+        noteTab.click();
+    }
+
+    public void openCredentialsTab() {
+        credentialsTab.click();
+    }
 
     public WebElement getAddNoteButton() {
         return addNoteButton;
