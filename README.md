@@ -1,6 +1,6 @@
 # MyCloudDrive
 
-[![Codacy Badge](https://app.codacy.com/project/badge/Grade/7e633d6037ad4278b2dbd4ef51bc0bcb)](https://www.codacy.com/gh/mikegikas/MyCloudDrive/dashboard?utm_source=github.com&amp;utm_medium=referral&amp;utm_content=mikegikas/MyCloudDrive&amp;utm_campaign=Badge_Grade)
+[![Codacy Badge](https://app.codacy.com/project/badge/Grade/7e633d6037ad4278b2dbd4ef51bc0bcb)](https://www.codacy.com/gh/mikegikas/MyCloudDrive/dashboard?utm_source=github.com&utm_medium=referral&utm_content=mikegikas/MyCloudDrive&utm_campaign=Badge_Grade)
 
 You have been hired by MyCloudDrive, which is a brand new company aiming to make a dent in the Cloud Storage market and is already facing stiff competition from rivals like Google Drive and Dropbox. That hasn't dampened their spirits at all, however. They want to include personal information management features in their application to differentiate them from the competition, and the minimum viable product includes three user-facing features:
 
@@ -54,9 +54,9 @@ Your tech lead has done a thorough job developing HTML templates for the require
 -   Remember to store the user's password securely!
 
 3.  Home page
-    The home page is the center of the application and hosts the three required pieces of functionality. The existing template presents them as three tabs that can be clicked through by the user:
+       The home page is the center of the application and hosts the three required pieces of functionality. The existing template presents them as three tabs that can be clicked through by the user:
 
- i. Files
+    i. Files
 
 -   The user should be able to upload files and see any files they previously uploaded. 
 
@@ -64,13 +64,16 @@ Your tech lead has done a thorough job developing HTML templates for the require
 
 -   Any errors related to file actions should be displayed. For example, a user should not be able to upload two files with the same name, but they'll never know unless you tell them!
 
- ii. Notes
+    ii. Notes
 
 -   The user should be able to create notes and see a list of the notes they have previously created.
+
 -   The user should be able to edit or delete previously-created notes.
 
     iii. Credentials
+
 -   The user should be able to store credentials for specific websites and see a list of the credentials they've previously stored. If you display passwords in this list, make sure they're encrypted!
+
 -   The user should be able to view/edit or delete individual credentials. When the user views the credential, they should be able to see the unencrypted password.
 
 The home page should have a logout button that allows the user to logout of the application and keep their data private.
