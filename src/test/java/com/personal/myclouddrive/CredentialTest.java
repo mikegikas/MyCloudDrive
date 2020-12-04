@@ -34,7 +34,7 @@ public class CredentialTest {
     private LoginPage loginPage;
     private SignupPage signupPage;
     private ResultPage resultPage;
-    WebDriverWait wait = new WebDriverWait(webDriver, 10);
+    private WebDriverWait wait = new WebDriverWait(webDriver, 10);
 
     @BeforeAll
     public static void beforeAll() {
