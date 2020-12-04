@@ -10,6 +10,8 @@ public class HomePage {
     @FindBy(id = "logoutButton")
     private WebElement logOutButton;
 
+    /* Notes */
+
     @FindBy(id = "nav-notes-tab")
     private WebElement noteTab;
 
@@ -40,6 +42,39 @@ public class HomePage {
     @FindBy(id = "note-description-text")
     private WebElement noteDescriptionText;
 
+    /* Credential */
+
+    @FindBy(id = "add-credential")
+    private WebElement addCredentialButton;
+
+    @FindBy(id = "credential-url")
+    private WebElement credentialUrl;
+
+    @FindBy(id = "credential-username")
+    private WebElement credentialUsername;
+
+    @FindBy(id = "credential-password")
+    private WebElement credentialPassword;
+
+    @FindBy(id = "save-credential")
+    private WebElement saveCredential;
+
+    @FindBy(id = "edit-credential")
+    private WebElement editCredential;
+
+    @FindBy(id = "delete-credential")
+    private WebElement deleteCredential;
+
+    @FindBy(id = "credential-url-text")
+    private WebElement credentialUrlText;
+
+    @FindBy(id = "credential-username-text")
+    private WebElement credentialUsernameText;
+
+    @FindBy(id = "credential-password-text")
+    private WebElement credentialPasswordText;
+
+
     public HomePage(WebDriver webDriver) {
         PageFactory.initElements(webDriver, this);
     }
@@ -47,6 +82,8 @@ public class HomePage {
     public void logOut() {
         logOutButton.click();
     }
+
+    /* Note */
 
     public WebElement getNoteTab() {
         return noteTab;
@@ -127,36 +164,8 @@ public class HomePage {
         getNoteDescription().clear();
         createNote(title, description);
     }
-
-    @FindBy(id = "add-credential")
-    private WebElement addCredentialButton;
-
-    @FindBy(id = "credential-url")
-    private WebElement credentialUrl;
-
-    @FindBy(id = "credential-username")
-    private WebElement credentialUsername;
-
-    @FindBy(id = "credential-password")
-    private WebElement credentialPassword;
-
-    @FindBy(id = "save-credential")
-    private WebElement saveCredential;
-
-    @FindBy(id = "edit-credential")
-    private WebElement editCredential;
-
-    @FindBy(id = "delete-credential")
-    private WebElement deleteCredential;
-
-    @FindBy(id = "credential-url-text")
-    private WebElement credentialUrlText;
-
-    @FindBy(id = "credential-username-text")
-    private WebElement credentialUsernameText;
-
-    @FindBy(id = "credential-password-text")
-    private WebElement credentialPasswordText;
+    
+    /* Credential */
 
     public void getAddCredentialButton() {
         addCredentialButton.click();
